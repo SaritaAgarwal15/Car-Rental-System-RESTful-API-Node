@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "action_after_build", "action_after_build.vcxproj", "{D0930049-B75E-46F3-9BEB-4CF6E6F38A57}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0525AD3C-8CB9-ACC3-38F6-A41F8CCC3966} = {0525AD3C-8CB9-ACC3-38F6-A41F8CCC3966}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bcrypt_lib", "bcrypt_lib.vcxproj", "{0525AD3C-8CB9-ACC3-38F6-A41F8CCC3966}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0525AD3C-8CB9-ACC3-38F6-A41F8CCC3966}.Debug|x64.ActiveCfg = Debug|x64
+		{0525AD3C-8CB9-ACC3-38F6-A41F8CCC3966}.Debug|x64.Build.0 = Debug|x64
+		{0525AD3C-8CB9-ACC3-38F6-A41F8CCC3966}.Release|x64.ActiveCfg = Release|x64
+		{0525AD3C-8CB9-ACC3-38F6-A41F8CCC3966}.Release|x64.Build.0 = Release|x64
+		{D0930049-B75E-46F3-9BEB-4CF6E6F38A57}.Debug|x64.ActiveCfg = Debug|x64
+		{D0930049-B75E-46F3-9BEB-4CF6E6F38A57}.Debug|x64.Build.0 = Debug|x64
+		{D0930049-B75E-46F3-9BEB-4CF6E6F38A57}.Release|x64.ActiveCfg = Release|x64
+		{D0930049-B75E-46F3-9BEB-4CF6E6F38A57}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
