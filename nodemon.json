@@ -1,5 +1,6 @@
 {
   "env":
 {"MONGODB_PassWord" : "srt1502agarwal",
-"jwt_key" : "secretkeysECRETKEY!89!!"}
+"jwt_key" : "secretkeysECRETKEY!89!!",
+"PORT": "3000"}
 }
