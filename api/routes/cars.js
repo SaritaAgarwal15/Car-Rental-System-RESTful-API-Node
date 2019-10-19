@@ -23,14 +23,13 @@ router.get('/', (req, res, next) => { //to get all the cars we have
     });
 });
 
-router.post('/', auth_middleware, (req, res, next) => {
+router.post('/', (req, res, next) => {
   const car = new Car({
     _id: new mongoose.Types.ObjectId(),
     car_name: req.body.car_name,
     vehicle_number: req.body.vehicle_number,
     seating_capacity: req.body.seating_capacity,
     PerDay_rent : req.body.PerDay_rent,
-    availability_status : req.bosy.availability_status
   });
   car.save().then(result =>{
     console.log(result);
