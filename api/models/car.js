@@ -4,7 +4,8 @@ const carSchema = mongoose.Schema({
   car_name: String,
   vehicle_number: String,
   seating_capacity: Number,
-  PerDay_rent : Number
+  PerDay_rent : Number,
+  availability_status : String
 });
 
 module.exports = mongoose.model('Car', carSchema);

@@ -30,6 +30,7 @@ router.post('/', (req, res, next) => {
     vehicle_number: req.body.vehicle_number,
     seating_capacity: req.body.seating_capacity,
     PerDay_rent : req.body.PerDay_rent,
+    availability_status : req.body.availability_status
   });
   car.save().then(result =>{
     console.log(result);

@@ -3,23 +3,12 @@ const router = express.Router();
 const mongoose = require('mongoose');
 
 const Booking = require('../models/bookingscm');
-const Cars = require("../models/car")
+const Cars = require("../models/car");
+
+const BookingController = require('../controller/booking');
 
 
-router.get('/', (req, res, next) => {
-  Booking.find()
-  .populate('booked_car')
-  .exec()
-  .then(docs => {
-    res.status(200).json(docs);
-  })
-  .catch(error => {
-    console.log(error);
-    res.status(500).json({
-      error:error
-    });
-  });
-});
+router.get('/', BookingController.booking_get_all);
 
 router.post('/', (req, res, next) => {
   Cars.findById(req.body.booked_car)
