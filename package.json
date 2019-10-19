@@ -4,8 +4,7 @@
   "description": "An assignment task to make a car rental system.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node app.js"
   },
   "author": "Sarita Agarwal",
   "license": "ISC",
