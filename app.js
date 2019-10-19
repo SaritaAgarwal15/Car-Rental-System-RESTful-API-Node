@@ -28,7 +28,7 @@ db.once("open", ()=> {
 
 app.get('/',function(req,res){
 	res.set('Content-Type', 'text/html');
-	res.send(new Buffer('<h1 style="font-family: Arial; color: #000000;" > <center> Open postman to test this RESTful API </h3> <center> <a href="https://www.getpostman.com/collections/7daf09dc9a4d8c77d40b" > POST COLLECTION LINK. </a> </h1> <H2 > Welcome!! </h2> '));
+	res.send(new Buffer('<h1 style="font-family: Arial; color: #000000;" > <center> Open postman to test this RESTful API </h3> <center> <a href="https://www.getpostman.com/collections/f365c3d290213875cc6b" > POST COLLECTION LINK. </a> </h1> <H2 > Welcome!! </h2> '));
 
 });
 
